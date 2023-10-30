@@ -15,7 +15,7 @@ If you do not wish to register your CTS daemons as services in Consul, there's b
 
 `consul-terraform-sync start -config-file path/to/repo/cts-config.hcl`
 
-If you wish to register your CTS daemons as services, you will need an API token for your cluster with the appropriate permissions (this is beyond the scope of this README, but the Consul docs should be helpful in this area!). Export that as an environment variable (or, if using systemd, ensure it's available to the service when it starts), then run the same command as above. Here's an example - please replace the token:
+You will need an API token for your cluster with the appropriate permissions (this is beyond the scope of this README, but the Consul docs should be helpful in this area!). Export that as an environment variable (or, if using systemd, ensure it's available to the service when it starts), then run the same command as above. Here's an example - please replace the token:
 
 ```
 export CONSUL_HTTP_TOKEN="never-gonna-give-you-up"
